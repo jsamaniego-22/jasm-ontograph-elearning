@@ -1,0 +1,37 @@
+%%{init: {'theme': 'neutral', 'themeVariables': { 'primaryColor': '#ffd2d2', 'edgeLabelBackground':'#fff'}}}%%
+flowchart LR
+    %% Nodos con íconos
+    A[("fa:fa-graduation-cap LMS\n(Moodle/Chamilo)")] -->|MySQL/MariaDB| B[("fa:fa-code API Django\n(Python)")]
+    B -->|"Transforma datos\na grafos"| C[("fa:fa-database Neo4j Cloud\n(AuraDB)")]
+    C -->|"Conector oficial"| D[("fa:fa-chart-bar Power BI")]
+    D --> E[("fa:fa-desktop Dashboards\nInteractivos")]
+
+    %% Subgrafos para agrupación lógica
+    subgraph "Sistema de Origen"
+        A
+    end
+
+    subgraph "Procesamiento"
+        B
+    end
+
+    subgraph "Almacenamiento"
+        C
+    end
+
+    subgraph "Visualización"
+        D
+        E
+    end
+
+    %% Estilos
+    class A,B,C,D,E rounded;
+    class A origen;
+    class B procesamiento;
+    class C almacenamiento;
+    class D,E visualizacion;
+
+    classDef origen fill:#FFD2D2,stroke:#666;
+    classDef procesamiento fill:#D2E0FF,stroke:#666;
+    classDef almacenamiento fill:#D2FFD2,stroke:#666;
+    classDef visualizacion fill:#FFF2D2,stroke:#666;

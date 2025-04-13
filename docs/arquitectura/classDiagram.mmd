@@ -1,0 +1,60 @@
+%%{init: {'theme': 'neutral', 'themeVariables': { 'primaryColor': '#f5f5f5'}}}%%
+classDiagram
+    %% Entidades principales
+    class Usuario {
+        +String id
+        +String nombre
+        +String email
+        +String rol
+    }
+
+    class Estudiante {
+        +List~Actividad~ actividades_completadas
+        +Float promedio_calificaciones()
+    }
+
+    class Profesor {
+        +List~Curso~ cursos_impartidos
+        +asignar_calificacion()
+    }
+
+    class Curso {
+        +String id
+        +String nombre
+        +String categoria
+        +List~Actividad~ actividades
+    }
+
+    class Actividad {
+        +String id
+        +String tipo
+        +Date fecha_limite
+        +Float puntuacion_maxima
+    }
+
+    class Calificacion {
+        +Float valor
+        +Date fecha
+        +String comentario
+    }
+
+    class GrafoConocimiento {
+        +Neo4jClient conexion
+        +actualizar_datos()
+        +consultar_relaciones()
+    }
+
+    %% Relaciones
+    Usuario <|-- Estudiante
+    Usuario <|-- Profesor
+
+    Estudiante "1" *-- "0..*" Calificacion : "Tiene"
+    Estudiante "1" --> "0..*" Actividad : "Realiza"
+
+    Profesor "1" --> "1..*" Curso : "Gestiona"
+
+    Curso "1" *-- "1..*" Actividad : "Contiene"
+    Actividad "1" *-- "0..*" Calificacion : "Genera"
+
+    GrafoConocimiento ..> Usuario : "Persiste"
+    GrafoConocimiento ..> Curso : "Persiste"

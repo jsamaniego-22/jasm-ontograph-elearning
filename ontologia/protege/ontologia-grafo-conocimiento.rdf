@@ -1,0 +1,1070 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/"
+     xml:base="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/AccedeMedianteDispositvos -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/AccedeMedianteDispositvos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/SeRegistroDesde"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tecnologia"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/DebeAsistirA -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/DebeAsistirA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_con_Deficiencias"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/DebeAsistirA"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Complementarios"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/DebeAsistirA"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Reforzamiento"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElCoordinadorDe -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElCoordinadorDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElCoordinadorDe"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Carreras"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElDecanoDe -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElDecanoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElDecanoDe"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElJefeDe -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElJefeDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Decanato"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsElJefeDe"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeLaMateria -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeLaMateria">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeLaMateria"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeLaMateria"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Materias"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeTipo -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeTipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeTipo"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores_Tiempo_Completo"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsProfesorDeTipo"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores_Tiempo_Parcial"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsUnEstudianteDeTipo -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsUnEstudianteDeTipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaMatriculadoEnLaCarrera"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsUnEstudianteDeTipo"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_Regulares"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsUnEstudianteDeTipo"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_con_Deficiencias"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsUnaMateriaDeLaCarrera -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsUnaMateriaDeLaCarrera">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Materias"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EsUnaMateriaDeLaCarrera"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Carreras"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaCursandoLaMateria -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaCursandoLaMateria">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaCursandoLaMateria"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Materias"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaMatriculadoEnElCurso -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaMatriculadoEnElCurso">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaMatriculadoEnElCurso"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaMatriculadoEnLaCarrera -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaMatriculadoEnLaCarrera">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/EstaMatriculadoEnLaCarrera"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Carreras"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/HaRepetidoElCurso -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/HaRepetidoElCurso">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_con_Deficiencias"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/HaRepetidoElCurso"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/HaRepetidoLaMateria -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/HaRepetidoLaMateria">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_con_Deficiencias"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/HaRepetidoLaMateria"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Materias"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PerteneceAlAreaDe -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PerteneceAlAreaDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PerteneceAlaFacultadDe"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PerteneceAlaFacultadDe -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PerteneceAlaFacultadDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PerteneceAlaFacultadDe"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PoseeLaEspecialidadDe -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PoseeLaEspecialidadDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+        <rdfs:range rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PoseeLasCalificaciones -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PoseeLasCalificaciones">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/PoseeLasCalificaciones"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Calificaciones"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/SeRegistroDesde -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/SeRegistroDesde">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/SeRegistroDesde"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tecnologia"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-apellido:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-apellido:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-area:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-area:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-cedula:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-cedula:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-departamento:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-departamento:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-direccion:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-direccion:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-email:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-email:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-fecha_ingreso:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-fecha_ingreso:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-nombre:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-nombre:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-puesto:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-puesto:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-telefono:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ad-telefono:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-cedula:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-cedula:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-certificaciones:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-certificaciones:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-fecha_cert:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-fecha_cert:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-fecha_ta:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-fecha_ta:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-id:INTEGER -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-id:INTEGER">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-profesion:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-profesion:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-tipo_persona:ENUM -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-tipo_persona:ENUM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-titulo_academico:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-dp-titulo_academico:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estapellido:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estapellido:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estcarrera:ENUM -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estcarrera:ENUM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estcedula:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estcedula:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estdireccion:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estdireccion:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estemail:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estemail:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estfecha_ingreso:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estfecha_ingreso:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estmatricula:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estmatricula:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estnombre:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-estnombre:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-esttelefono:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-esttelefono:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-esttipo_estudiante:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-esttipo_estudiante:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-esttrabaja:ENUM -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-esttrabaja:ENUM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-actividad:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-actividad:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-calificacion:FLOAT -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-calificacion:FLOAT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-categoria:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-categoria:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-descripcion:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-descripcion:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-facultad_id:INTEGER -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-facultad_id:INTEGER">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-fecha_calificacion:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-fecha_calificacion:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-fecha_registro:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-fecha_registro:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-fecha_seguimiento:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-fecha_seguimiento:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-nombre:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-nombre:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-nombre_carrera:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-nombre_carrera:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-nombre_curso:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-nombre_curso:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-tiempo_dedicado:FLOAT -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-tiempo_dedicado:FLOAT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-tipo_seguimiento:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-tipo_seguimiento:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-ubicacion:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-fa-ubicacion:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-apellido:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-apellido:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-cedula:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-cedula:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-departamento:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-departamento:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-direccion:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-direccion:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-email:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-email:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-especialidad:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-especialidad:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-fecha_contratacion:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-fecha_contratacion:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-nombre:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-nombre:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-telefono:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-telefono:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-tipo_profesor:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-prf-tipo_profesor:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-tec-id:INTEGER -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-tec-id:INTEGER">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tecnologia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-tec-nombre:STRING -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-tec-nombre:STRING">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tecnologia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-tec-tipo_dispositivo:ENUM -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-tec-tipo_dispositivo:ENUM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tecnologia"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-curso_id:INTEGER -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-curso_id:INTEGER">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tiempo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-fecha_registro:DATE -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-fecha_registro:DATE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tiempo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-id:INTEGER -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-id:INTEGER">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tiempo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-persona_id:INTEGER -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-persona_id:INTEGER">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tiempo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-tiempo_dedicado:FLOAT -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/js-ti-tiempo_dedicado:FLOAT">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tiempo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos">
+        <owl:disjointWith rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Calificaciones -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Calificaciones">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Carreras -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Carreras">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Complementarios -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Complementarios">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Coordinadores_de_Carrera -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Coordinadores_de_Carrera">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Datos_Profesionales"/>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Decanato -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Decanato">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_Regulares -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_Regulares">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_con_Deficiencias -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes_con_Deficiencias">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Estudiantes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Extra_Curriculares -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Extra_Curriculares">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Materias -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Materias">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Carreras"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Personal_de_Oficina -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Personal_de_Oficina">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Administrativos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores_Tiempo_Completo -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores_Tiempo_Completo">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores_Tiempo_Parcial -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores_Tiempo_Parcial">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Profesores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Reforzamiento -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Reforzamiento">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Cursos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Seguimientos -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Seguimientos">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Facultades"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tecnologia -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tecnologia"/>
+    
+
+
+    <!-- http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tiempo -->
+
+    <owl:Class rdf:about="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/Tiempo"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

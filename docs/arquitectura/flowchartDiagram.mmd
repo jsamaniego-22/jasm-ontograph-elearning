@@ -1,0 +1,49 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffd2d2', 'edgeLabelBackground':'#fff'}}}%%
+flowchart TD
+    %% Nodos principales
+    A[("fa:fa-graduation-cap LMS (Moodle/Chamilo)")] --> B[("fa:fa-database Base de Datos MySQL")]
+    B --> C[("fa:fa-code API Django")]
+    C --> D{¿Datos válidos?}
+    D -->|Sí| E[("fa:fa-project-diagram Transformar a Grafo")]
+    D -->|No| F[("fa:fa-exclamation-triangle Error: Log")]
+    E --> G[("fa:fa-database Neo4j Cloud")]
+    G --> H[("fa:fa-chart-line Power BI")]
+    H --> I[("fa:fa-users Dashboard Docentes")]
+
+    %% Subprocesos
+    subgraph "Extract"
+        A --> B
+        B --> C
+    end
+
+    subgraph "Transform"
+        C --> D
+        E --> G
+    end
+
+    subgraph "Load"
+        G
+    end
+
+    subgraph "Visualize"
+        H --> I
+    end
+
+    %% Estilos
+    class A,B,C,D,E,F,G,H,I rounded;
+    style A fill:#FFD2D2,stroke:#666
+    style B fill:#FFD2D2,stroke:#666
+    style C fill:#D2E0FF,stroke:#666
+    style D fill:#FFF2D2,stroke:#666
+    style E fill:#D2E0FF,stroke:#666
+    style F fill:#FFD2D2,stroke:#666
+    style G fill:#D2FFD2,stroke:#666
+    style H fill:#FFF2D2,stroke:#666
+    style I fill:#E6E6FA,stroke:#666
+
+    %% Leyenda
+    legend[("Leyenda:")]
+    legend --> extract[("Extract")]
+    legend --> transform[("Transform")]
+    legend --> load[("Load")]
+    legend --> visualize[("Visualize")]

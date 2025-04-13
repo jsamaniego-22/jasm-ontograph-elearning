@@ -1,0 +1,1187 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento">
+    <Prefix name="" IRI="http://localhost/ontologies/2024/6/Ontologia-de-Grafo-de-Conocimiento/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="/Administrativos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Calificaciones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Carreras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Complementarios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Coordinadores_de_Carrera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Cursos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Datos_Profesionales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Decanato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Estudiantes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Estudiantes_Regulares"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Estudiantes_con_Deficiencias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Extra_Curriculares"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Facultades"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Materias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Personal_de_Oficina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Profesores"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Profesores_Tiempo_Completo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Profesores_Tiempo_Parcial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Reforzamiento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Seguimientos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Tecnologia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Tiempo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/AccedeMedianteDispositvos"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/DebeAsistirA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EsElCoordinadorDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EsElDecanoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EsElJefeDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EsProfesorDeLaMateria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EsProfesorDeTipo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EsUnEstudianteDeTipo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EsUnaMateriaDeLaCarrera"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EstaCursandoLaMateria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EstaMatriculadoEnElCurso"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EstaMatriculadoEnLaCarrera"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/HaRepetidoElCurso"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/HaRepetidoLaMateria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/PerteneceAlAreaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/PerteneceAlaFacultadDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/PoseeLaEspecialidadDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/PoseeLasCalificaciones"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/SeRegistroDesde"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-apellido:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-area:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-cedula:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-departamento:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-direccion:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-email:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-fecha_ingreso:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-nombre:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-puesto:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ad-telefono:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-cedula:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-certificaciones:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-fecha_cert:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-fecha_ta:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-id:INTEGER"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-profesion:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-tipo_persona:ENUM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-dp-titulo_academico:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estapellido:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estcarrera:ENUM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estcedula:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estdireccion:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estemail:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estfecha_ingreso:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estmatricula:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-estnombre:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-esttelefono:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-esttipo_estudiante:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-esttrabaja:ENUM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-actividad:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-calificacion:FLOAT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-categoria:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-descripcion:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-facultad_id:INTEGER"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-fecha_calificacion:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-fecha_registro:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-fecha_seguimiento:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-nombre:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-nombre_carrera:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-nombre_curso:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-tiempo_dedicado:FLOAT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-tipo_seguimiento:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-fa-ubicacion:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-apellido:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-cedula:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-departamento:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-direccion:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-email:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-especialidad:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-fecha_contratacion:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-nombre:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-telefono:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-prf-tipo_profesor:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-tec-id:INTEGER"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-tec-nombre:STRING"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-tec-tipo_dispositivo:ENUM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ti-curso_id:INTEGER"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ti-fecha_registro:DATE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ti-id:INTEGER"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ti-persona_id:INTEGER"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/js-ti-tiempo_dedicado:FLOAT"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/Calificaciones"/>
+        <Class IRI="/Facultades"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Carreras"/>
+        <Class IRI="/Facultades"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Complementarios"/>
+        <Class IRI="/Cursos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Coordinadores_de_Carrera"/>
+        <Class IRI="/Administrativos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cursos"/>
+        <Class IRI="/Facultades"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Decanato"/>
+        <Class IRI="/Administrativos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Estudiantes_Regulares"/>
+        <Class IRI="/Estudiantes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Estudiantes_con_Deficiencias"/>
+        <Class IRI="/Estudiantes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Extra_Curriculares"/>
+        <Class IRI="/Cursos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Materias"/>
+        <Class IRI="/Carreras"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Personal_de_Oficina"/>
+        <Class IRI="/Administrativos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Profesores"/>
+        <Class IRI="/Administrativos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Profesores_Tiempo_Completo"/>
+        <Class IRI="/Profesores"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Profesores_Tiempo_Parcial"/>
+        <Class IRI="/Profesores"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Reforzamiento"/>
+        <Class IRI="/Cursos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Seguimientos"/>
+        <Class IRI="/Facultades"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/Administrativos"/>
+        <Class IRI="/Estudiantes"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/AccedeMedianteDispositvos"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/DebeAsistirA"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EsElCoordinadorDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EsElDecanoDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EsElJefeDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EsProfesorDeLaMateria"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EsProfesorDeTipo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EsUnEstudianteDeTipo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EsUnaMateriaDeLaCarrera"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EstaCursandoLaMateria"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EstaMatriculadoEnElCurso"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/EstaMatriculadoEnLaCarrera"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/HaRepetidoElCurso"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/HaRepetidoLaMateria"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/PerteneceAlAreaDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/PerteneceAlaFacultadDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/PoseeLaEspecialidadDe"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/PoseeLasCalificaciones"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/SeRegistroDesde"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AccedeMedianteDispositvos"/>
+        <Class IRI="/Estudiantes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/DebeAsistirA"/>
+        <Class IRI="/Estudiantes_con_Deficiencias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EsElCoordinadorDe"/>
+        <Class IRI="/Profesores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EsElDecanoDe"/>
+        <Class IRI="/Profesores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EsElJefeDe"/>
+        <Class IRI="/Decanato"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EsProfesorDeLaMateria"/>
+        <Class IRI="/Profesores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EsProfesorDeTipo"/>
+        <Class IRI="/Profesores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EsUnEstudianteDeTipo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EstaMatriculadoEnLaCarrera"/>
+            <Class IRI="/Estudiantes"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EsUnaMateriaDeLaCarrera"/>
+        <Class IRI="/Materias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EstaCursandoLaMateria"/>
+        <Class IRI="/Estudiantes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EstaMatriculadoEnElCurso"/>
+        <Class IRI="/Estudiantes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EstaMatriculadoEnLaCarrera"/>
+        <Class IRI="/Estudiantes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/HaRepetidoElCurso"/>
+        <Class IRI="/Estudiantes_con_Deficiencias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/HaRepetidoLaMateria"/>
+        <Class IRI="/Estudiantes_con_Deficiencias"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/PerteneceAlAreaDe"/>
+        <Class IRI="/Administrativos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/PerteneceAlaFacultadDe"/>
+        <Class IRI="/Profesores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/PoseeLaEspecialidadDe"/>
+        <Class IRI="/Profesores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/PoseeLasCalificaciones"/>
+        <Class IRI="/Estudiantes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/SeRegistroDesde"/>
+        <Class IRI="/Estudiantes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/AccedeMedianteDispositvos"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/SeRegistroDesde"/>
+            <Class IRI="/Tecnologia"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/DebeAsistirA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/DebeAsistirA"/>
+            <Class IRI="/Complementarios"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/DebeAsistirA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/DebeAsistirA"/>
+            <Class IRI="/Reforzamiento"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsElCoordinadorDe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsElCoordinadorDe"/>
+            <Class IRI="/Carreras"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsElDecanoDe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsElDecanoDe"/>
+            <Class IRI="/Facultades"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsElJefeDe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsElJefeDe"/>
+            <Class IRI="/Facultades"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsProfesorDeLaMateria"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsProfesorDeLaMateria"/>
+            <Class IRI="/Cursos"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsProfesorDeLaMateria"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsProfesorDeLaMateria"/>
+            <Class IRI="/Materias"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsProfesorDeTipo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsProfesorDeTipo"/>
+            <Class IRI="/Profesores_Tiempo_Completo"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsProfesorDeTipo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsProfesorDeTipo"/>
+            <Class IRI="/Profesores_Tiempo_Parcial"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsUnEstudianteDeTipo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsUnEstudianteDeTipo"/>
+            <Class IRI="/Estudiantes_Regulares"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsUnEstudianteDeTipo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsUnEstudianteDeTipo"/>
+            <Class IRI="/Estudiantes_con_Deficiencias"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EsUnaMateriaDeLaCarrera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EsUnaMateriaDeLaCarrera"/>
+            <Class IRI="/Carreras"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EstaCursandoLaMateria"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EstaCursandoLaMateria"/>
+            <Class IRI="/Materias"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EstaMatriculadoEnElCurso"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EstaMatriculadoEnElCurso"/>
+            <Class IRI="/Cursos"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EstaMatriculadoEnLaCarrera"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/EstaMatriculadoEnLaCarrera"/>
+            <Class IRI="/Carreras"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/HaRepetidoElCurso"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/HaRepetidoElCurso"/>
+            <Class IRI="/Cursos"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/HaRepetidoLaMateria"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/HaRepetidoLaMateria"/>
+            <Class IRI="/Materias"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/PerteneceAlAreaDe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/PerteneceAlaFacultadDe"/>
+            <Class IRI="/Facultades"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/PerteneceAlaFacultadDe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/PerteneceAlaFacultadDe"/>
+            <Class IRI="/Facultades"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/PoseeLaEspecialidadDe"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/PoseeLasCalificaciones"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/PoseeLasCalificaciones"/>
+            <Class IRI="/Calificaciones"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/SeRegistroDesde"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/SeRegistroDesde"/>
+            <Class IRI="/Tecnologia"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-apellido:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-area:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-cedula:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-departamento:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-direccion:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-email:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-fecha_ingreso:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-nombre:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-puesto:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ad-telefono:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-cedula:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-certificaciones:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-fecha_cert:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-fecha_ta:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-id:INTEGER"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-profesion:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-tipo_persona:ENUM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-dp-titulo_academico:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estapellido:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estcarrera:ENUM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estcedula:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estdireccion:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estemail:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estfecha_ingreso:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estmatricula:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-estnombre:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-esttelefono:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-esttipo_estudiante:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-esttrabaja:ENUM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-actividad:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-calificacion:FLOAT"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-categoria:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-descripcion:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-facultad_id:INTEGER"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-fecha_calificacion:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-fecha_registro:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-fecha_seguimiento:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-nombre:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-nombre_carrera:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-nombre_curso:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-tiempo_dedicado:FLOAT"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-tipo_seguimiento:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-fa-ubicacion:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-apellido:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-cedula:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-departamento:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-direccion:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-email:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-especialidad:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-fecha_contratacion:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-nombre:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-telefono:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-prf-tipo_profesor:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-tec-id:INTEGER"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-tec-nombre:STRING"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-tec-tipo_dispositivo:ENUM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ti-curso_id:INTEGER"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ti-fecha_registro:DATE"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ti-id:INTEGER"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ti-persona_id:INTEGER"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/js-ti-tiempo_dedicado:FLOAT"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-apellido:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-area:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-cedula:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-departamento:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-direccion:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-email:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-fecha_ingreso:DATE"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-nombre:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-puesto:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ad-telefono:STRING"/>
+        <Class IRI="/Administrativos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-cedula:STRING"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-certificaciones:STRING"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-fecha_cert:DATE"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-fecha_ta:DATE"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-id:INTEGER"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-profesion:STRING"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-tipo_persona:ENUM"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-dp-titulo_academico:STRING"/>
+        <Class IRI="/Datos_Profesionales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estapellido:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estcarrera:ENUM"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estcedula:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estdireccion:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estemail:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estfecha_ingreso:DATE"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estmatricula:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-estnombre:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-esttelefono:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-esttipo_estudiante:STRING"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-esttrabaja:ENUM"/>
+        <Class IRI="/Estudiantes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-actividad:STRING"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-calificacion:FLOAT"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-descripcion:STRING"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-facultad_id:INTEGER"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-fecha_calificacion:DATE"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-fecha_registro:DATE"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-fecha_seguimiento:DATE"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-nombre:STRING"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-nombre_carrera:STRING"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-nombre_curso:STRING"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-tiempo_dedicado:FLOAT"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-tipo_seguimiento:STRING"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-fa-ubicacion:STRING"/>
+        <Class IRI="/Facultades"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-apellido:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-cedula:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-departamento:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-direccion:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-email:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-especialidad:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-fecha_contratacion:DATE"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-nombre:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-prf-telefono:STRING"/>
+        <Class IRI="/Profesores"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-tec-id:INTEGER"/>
+        <Class IRI="/Tecnologia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-tec-nombre:STRING"/>
+        <Class IRI="/Tecnologia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-tec-tipo_dispositivo:ENUM"/>
+        <Class IRI="/Tecnologia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ti-curso_id:INTEGER"/>
+        <Class IRI="/Tiempo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ti-fecha_registro:DATE"/>
+        <Class IRI="/Tiempo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ti-id:INTEGER"/>
+        <Class IRI="/Tiempo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ti-persona_id:INTEGER"/>
+        <Class IRI="/Tiempo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/js-ti-tiempo_dedicado:FLOAT"/>
+        <Class IRI="/Tiempo"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

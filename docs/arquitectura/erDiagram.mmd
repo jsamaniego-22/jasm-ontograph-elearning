@@ -1,0 +1,103 @@
+erDiagram
+    mdl_user ||--o{ mdl_user_enrolments : "tiene"
+    mdl_user ||--o{ mdl_role_assignments : "tiene"
+    mdl_user ||--o{ mdl_grade_grades : "tiene"
+    mdl_user ||--o{ mdl_logstore_standard_log : "registra"
+    mdl_user {
+        bigint id PK
+        varchar username
+        varchar firstname
+        varchar lastname
+        varchar email
+        bigint timecreated
+    }
+    
+    mdl_user_enrolments ||--|{ mdl_enrol : "pertenece a"
+    mdl_user_enrolments {
+        bigint id PK
+        bigint userid FK
+        bigint enrolid FK
+        bigint timestart
+        bigint timeend
+    }
+    
+    mdl_enrol {
+        bigint id PK
+        bigint courseid FK
+        varchar enrol
+    }
+    
+    mdl_role_assignments ||--|{ mdl_role : "tiene rol"
+    mdl_role_assignments {
+        bigint id PK
+        bigint userid FK
+        bigint roleid FK
+        bigint contextid FK
+    }
+    
+    mdl_role {
+        bigint id PK
+        varchar shortname
+        varchar name
+    }
+    
+    mdl_grade_grades ||--|{ mdl_grade_items : "corresponde a"
+    mdl_grade_grades {
+        bigint id PK
+        bigint userid FK
+        bigint itemid FK
+        decimal finalgrade
+        bigint timemodified
+    }
+    
+    mdl_grade_items {
+        bigint id PK
+        bigint courseid FK
+        varchar itemname
+    }
+    
+    mdl_logstore_standard_log {
+        bigint id PK
+        bigint userid FK
+        bigint courseid FK
+        varchar action
+        bigint timecreated
+    }
+    
+    mdl_course ||--o{ mdl_assign : "contiene"
+    mdl_course ||--o{ mdl_quiz : "contiene"
+    mdl_course ||--|{ mdl_course_categories : "pertenece a"
+    mdl_course {
+        bigint id PK
+        bigint category FK
+        varchar fullname
+        varchar shortname
+        text summary
+    }
+    
+    mdl_assign {
+        bigint id PK
+        bigint course FK
+        varchar name
+        bigint duedate
+    }
+    
+    mdl_quiz {
+        bigint id PK
+        bigint course FK
+        varchar name
+        bigint timeopen
+        bigint timeclose
+    }
+    
+    mdl_course_categories {
+        bigint id PK
+        varchar name
+        text description
+    }
+    
+    mdl_config {
+        bigint id PK
+        varchar name
+        text value
+    }
