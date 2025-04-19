@@ -8,6 +8,17 @@ SELECT
     FROM_UNIXTIME(cm.added) AS date_added,
     -- Datos específicos por tipo de actividad
     CASE 
+        WHEN m.name = 'assign' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'choice' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'choicegroup' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'feedback' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'forum' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'glossary' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'h5pactivity' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'lesson' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'scorm' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'survey' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
+        WHEN m.name = 'workshop' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
         WHEN m.name = 'hvp' THEN (SELECT name FROM mdl_hvp WHERE id = cm.instance)
         WHEN m.name = 'quiz' THEN (SELECT name FROM mdl_quiz WHERE id = cm.instance)
         WHEN m.name = 'attendance' THEN (SELECT name FROM mdl_attendance WHERE id = cm.instance)
@@ -19,7 +30,5 @@ FROM
     mdl_course_modules cm
 JOIN 
     mdl_modules m ON cm.module = m.id
-WHERE 
-    cm.course IN (8, 9)  -- Filtra por IDs de curso
 ORDER BY 
     cm.course, cm.section;

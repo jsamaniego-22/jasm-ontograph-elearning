@@ -1,4 +1,4 @@
---Informacion de Profesores
+-- Informacion de Profesores
 SELECT 
     u.id,
     u.username,

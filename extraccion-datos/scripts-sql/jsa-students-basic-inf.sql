@@ -1,4 +1,4 @@
---Tabla mdl_user
+-- Tabla mdl_user
 SELECT 
     u.id,
     u.username,

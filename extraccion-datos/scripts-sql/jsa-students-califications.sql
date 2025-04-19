@@ -1,4 +1,4 @@
---Calificaciones
+-- Calificaciones
 SELECT 
     gg.userid,
     gi.courseid,

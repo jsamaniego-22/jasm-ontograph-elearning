@@ -1,4 +1,4 @@
---Cursos Gestionados
+-- Cursos Gestionados
 SELECT 
     c.id AS courseid,
     c.fullname,

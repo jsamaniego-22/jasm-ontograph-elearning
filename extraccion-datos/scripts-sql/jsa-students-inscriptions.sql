@@ -1,4 +1,4 @@
---Inscripciones en Cursos
+-- Inscripciones en Cursos
 SELECT 
     ue.userid,
     ue.enrolid,
