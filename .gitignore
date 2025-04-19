@@ -34,4 +34,4 @@ wheels/
 env/
 venv/
 .env
-data/
+data/extraccion-datos/data/d_stu_calif.csv
