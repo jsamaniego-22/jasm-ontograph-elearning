@@ -10,6 +10,7 @@ FROM
     mdl_course_modules cm
 JOIN 
     mdl_modules m ON cm.module = m.id
+ORDER BY cm.course
 
 -- Actividades agrupadas por curso
 SELECT 
