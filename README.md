@@ -90,7 +90,11 @@ Este repositorio contiene el desarrollo de un **grafo de conocimiento** diseñad
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 
-*Última actualización: [fecha]*  
+*Última actualización: 20/04/2025*  
+
+🐕‍🦺 **Kempachi** (mi fiel compañero día y noche) | 🐩 **Roxy** (mi alarma de descanso de 4:00 PM) | 👩❤️‍👨 **Coti** (mi soporte y paciencia infinita)
+
+Al inicio lo vi como un proyecto demasiado retador, quizás a esta versión aún falte recorrido por andar, pero lo que sí estoy seguro, es que cada vez que lea este apartado sabré que no solo fui yo el artífice de esto. También están tras de mí: **Kempachi** quien acostado junto a mí sin saber qué pasaba siempre me acompañó día y noche. Mi **Roxy** que con su cabecita inquieta cada tarde de trabajo venía a las 4:00 pm a recordarme el tiempo de descanso (aunque no siempre podía, pero ella me recordaba hacer un alto). Y mi querida **Coti**, gracias por estar y confiar, por la paciencia de no saber y privarte de salir con tal de ser mi soporte para seguir. ¡Esto es para ustedes! 💖
 
 ---
 
