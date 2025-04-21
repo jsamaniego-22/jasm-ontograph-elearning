@@ -36,12 +36,12 @@ CALL apoc.periodic.iterate(
 MERGE (t:Tecnologia {id: 1, nombre: 'Plataforma Moodle', tipo: 'web'});
 
 // 2. Cargar accesos desde el CSV
-LOAD CSV WITH HEADERS FROM 'file:///accesos_estudiantes.csv' AS row
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/jsamaniego-22/jasm-ontograph-elearning/refs/heads/master/extraccion-datos/data/d_acces-users.csv' AS row
+WITH row LIMIT 500  // Process only 500 at a time
 MATCH (e:Estudiante {id: toInteger(row.userid)})
 MATCH (t:Tecnologia {id: 1})
 MERGE (e)-[r:ACCEDIO]->(t)
 SET 
-    r.primera_conexion = datetime(row.primera_conexion),
-    r.ultima_conexion = datetime(row.ultima_conexion),
-    r.total_accesos = toInteger(row.total_accesos),
-    r.minutos_conectado = toInteger(row.segundos_conectado)/60;
+    r.primera_conexion = datetime(replace(row.primera_conexion, ' ', 'T')),
+    r.ultima_conexion = datetime(replace(row.ultima_conexion, ' ', 'T')),
+    r.minutos_conectado = toInteger(row.segundos_conectado)/60
