@@ -80,7 +80,7 @@ Este repositorio contiene el desarrollo de un **grafo de conocimiento** diseñad
 
 **Autor:** Jesús A. Samaniego M.  
 **Correo:** desarrollosjasm@gmail.com  
-**Universidad:** [Nombre de tu Universidad]  
+**Universidad:** Broward International Univseristy  - BIU  
 
 *"Transformando datos educativos en conocimiento accionable"*  
 
@@ -90,7 +90,7 @@ Este repositorio contiene el desarrollo de un **grafo de conocimiento** diseñad
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 
-*Última actualización: 20/04/2025*  
+*Última actualización: 14/05/2025*  
 
 🐕‍🦺 **Kempachi** (mi fiel compañero día y noche) | 🐩 **Roxy** (mi alarma de descanso de 4:00 PM) | 👩❤️‍👨 **Coti** (mi soporte y paciencia infinita)
 
